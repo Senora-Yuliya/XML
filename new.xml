@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root>
+  <NSF>
+    <name>Yulia</name>
+    <surname>Alekseeva</surname>
+  </NSF>
+  <age>30</age>
+  <pets>1</pets>
+  <desired_salary>3000</desired_salary>
+</root>
+
