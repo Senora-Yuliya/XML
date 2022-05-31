@@ -1,0 +1,111 @@
+HW_1 GitBash. XML
+
+MacOS BigSur
+Телеграмм - @i_am_like_a_bird
+
+ 21. Создать внешний репозиторий c названием XML.
+github.com->Recent Repositories->press "New"->giving name to repository XML -> click on "Create repository"
+ 22. Клонировать репозиторий XML на локальный компьютер.
+pwd
+cd ../
+копируем ссылку на репозиторий SSH
+В терминале отправляем команду git clone git@github.com:Senora-Yuliya/XML.git
+
+ 23. Внутри локального XML создать файл “new.xml”.
+cd XML
+touch new.xml
+
+ 24. Добавить файл под гит.
+git add new.xml 
+
+ 25. Закоммитить файл.
+git commit -m new.xml
+
+ 26. Отправить файл на внешний GitHub репозиторий.
+git push
+
+ 27. Отредактировать содержание файла “new.xml” - написать информацию о себе (ФИО, возраст, количество домашних животных, будущая желаемая зарплата). Всё написать в формате XML.
+
+<?xml version="1.0" encoding="UTF-8"?>
+<root>
+  <NSF>
+    <name>Yulia</name>
+    <surname>Alekseeva</surname>
+  </NSF>
+  <age>30</age>
+  <pets>1</pets>
+  <salary>3000</salary>
+</root>
+
+Esc :wq
+
+ 28. Отправить изменения на внешний репозиторий.
+git status
+git add new.xml
+git commit -m new.xml
+git push
+
+ 29. Создать файл preferences.xml
+touch preferences.xml
+
+ 30. В файл preferences.xml добавить информацию о своих предпочтениях (Любимый фильм, любимый сериал, любимая еда, любимое время года, сторона которую хотели бы посетить) в формате XML.
+vim preferences.xml
+
+<?xml version="1.0" encoding="UTF-8"?>
+<root>
+  <favorite_movie>1+1</favorite_movie>
+  <favorite_TWShow>Pacanki</favorite_TWShow>
+  <favorite_food>Pizza</favorite_food>
+  <favorite_season_of_the_year>Spring</favorite_season_of_the_year>
+  <Country_I_would_like_to_visit>Australia</Country_I_would_like_to_visit>
+</root>
+Esc :wq
+
+
+ 31. Создать файл sklls.xml добавить информацию о скиллах которые будут изучены на курсе в формате XML
+touch skills.xml
+vim skills.xml
+
+<?xml version="1.0" encoding="UTF-8"?>
+<root>
+  <skill_1>HTTP</skill_1>
+  <skill_2>GIT</skill_2>
+  <skill_3>VPN</skill_3>
+  <skill_4>SQL</skill_4>
+  <skill_5>Postman</skill_5>
+  <skill_6>Charles</skill_6>
+</root>
+
+Esc :wq
+
+
+ 32. Сделать коммит в одну строку.
+git add -A && git commit -m "Add two files to repository"
+
+ 33. Отправить сразу 2 файла на внешний репозиторий.
+git push
+
+ 34. На веб интерфейсе создать файл bug_report.xml.
+Заходим на GitHub в созданный репозиторий - Add file - Create new file
+Вводим имя bug_report.xml
+
+ 35. Сделать Commit changes (сохранить) изменения на веб интерфейсе.
+Нажимаем Commit new file
+
+ 36. На веб интерфейсе модифицировать файл bug_report.xml, добавить баг репорт в формате XML.
+Заходим в созданный файл bug_report.xml
+Нажимаем Edit this file
+Заполняем
+
+<?xml version="1.0" encoding="UTF-8"?>
+<root>
+  <Country_I_would_like_to_visit>Australia</Country_I_would_like_to_visit>
+</root>
+
+Заполняем поле Commit changes
+
+ 37. Сделать Commit changes (сохранить) изменения на веб интерфейсе.
+Нажимаем Commit changes
+
+ 38. Синхронизировать внешний и локальный репозиторий XML
+В терминале выполняем команду git pull
